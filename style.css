@@ -5,14 +5,32 @@
     font-style: normal;
 }
 
+
+.header-container {
+    position: relative;
+    margin: 10px 0;
+    padding: 0 12px;
+    height: 144px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url("blue.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+
 .header-container::before {
     content: "";
     position: absolute;
-    top: -4px;
+    top: 0;
     left: 0;
     width: 100%;
     height: 4px;
-
     background: linear-gradient(
         90deg,
         #ff00cc,
@@ -24,33 +42,52 @@
     background-size: 300% 100%;
     animation: rainbowMove 2s linear infinite;
 }
-.header-container{
-    background-image: url("blue.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 1px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-top: 0;
-    padding-top: 0;
-    
 
+
+.header-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        #ff00cc,
+        #00ffae,
+        #00aaff,
+        #ff00cc
+    );
+
+    background-size: 300% 100%;
+    animation: rainbowMove 2s linear infinite;
 }
+
 .logo-title{
     font-family: 'Ethnocentric Rg',sans-serif;
     color:#ffffff;
     /*padding: 40px 20px;*/
     margin-bottom: 5px;
     text-align: left;
-    font-size: 60px;
+    font-size: 45px;
+    position: absolute;
+    top: 8px;
+    left: 4.2%;
+    margin: 0;
+    padding: 0;
+
 }
 .main-title{
     text-align: left;
     font-family: Times New Roman;
     color:#ffffff;
     padding: 10px 10px;
-    margin-bottom: 5px;
-    font-size: 40px;   
+    margin-top: 8px auto;
+    margin-bottom: 2px;
+    font-size: 40px; 
+    position: absolute;
+    left: 3.6%; 
+    bottom: 2px;
 }
 
 .navbar {
@@ -64,31 +101,10 @@
     border-bottom: none;
 }
 
-.navbar::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-
-    background: linear-gradient(
-        90deg,
-        #ff00cc,
-        #00ffae,
-        #00aaff,
-        #ff00cc
-    );
-
-    background-size: 300% 100%;
-    animation: rainbowMove 2s linear infinite;
-}
-
 @keyframes rainbowMove {
     from {
         background-position: 0% 50%;
     }
-
     to {
         background-position: 100% 50%;
     }
