@@ -9,8 +9,8 @@
 .header-container {
     position: relative;
     margin: 10px 0;
-    padding: 0 12px;
-    height: 144px;
+    padding: 0 5px;
+    height: 135px;
 
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 5px;
     background: linear-gradient(
         90deg,
         #ff00cc,
@@ -50,7 +50,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 5px;
     background: linear-gradient(
         90deg,
         #ff00cc,
@@ -69,13 +69,13 @@
     /*padding: 40px 20px;*/
     margin-bottom: 5px;
     text-align: left;
-    font-size: 45px;
+    font-size: 40px;
     position: absolute;
     top: 8px;
     left: 4.2%;
     margin: 0;
     padding: 0;
-
+    text-shadow: 5px 5px 10px black;
 }
 .main-title{
     text-align: left;
@@ -84,10 +84,11 @@
     padding: 10px 10px;
     margin-top: 8px auto;
     margin-bottom: 2px;
-    font-size: 40px; 
+    font-size: 35px; 
     position: absolute;
     left: 3.6%; 
     bottom: 2px;
+    text-shadow: 5px 5px 10px black;
 }
 
 .navbar {
@@ -95,10 +96,12 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 35px;
-    min-height: 40px;
-    padding: 12px 3%;
-    border-bottom: none;
+    gap: 40px;
+    min-height: 20px;
+    padding: 0 48px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
 }
 
 @keyframes rainbowMove {
@@ -111,17 +114,17 @@
 }
 
 .navbar a {
-    color: #76baff;
+    color: #376b9e;
     font-weight: bold;
     text-decoration: none;
 }
 
 .navbar strong {
-    color: #a9c9e8;
+    color: #4c545c;
 }
 
 .navbar span {
-    color: #a9c9e8;
+    color: #474b50;
 }
 
 .table-container {
@@ -191,5 +194,5 @@ th{
 }
 body{
     color:#ffffff;
-    margin: 20px;
+    margin: 0;
 }
